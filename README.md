@@ -7,7 +7,9 @@ Note that you will still need to accept the license manually.
 ## How to use
 ``
 docker build -t burpsuite-co-api .
+``
 
+``
 docker run -p 8080:8080 -p 8090:8090 -it burpsuite-co-api java -jar /var/local/burp-rest-api/build/libs/burp-rest-api-1.0.0.jar --burp.edition=free
 ``
 
