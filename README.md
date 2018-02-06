@@ -4,9 +4,11 @@ Docker image with BurpSuite Community edition and Rest/JSON API endpoint by [VMW
 
 Note that you will still need to accept the license manually.
 
-## How to run
+## How to use
 ``
-docker run -p 8080:8080 -p 8090:8090 -it burpsuite-pro-api java -jar /var/local/burp-rest-api/build/libs/burp-rest-api-1.0.0.jar
+docker build -t burpsuite-co-api .
+
+docker run -p 8080:8080 -p 8090:8090 -it burpsuite-co-api java -jar /var/local/burp-rest-api/build/libs/burp-rest-api-1.0.0.jar --burp.edition=free
 ``
 
 ## Rest/JSON endpoints
